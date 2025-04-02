@@ -14,7 +14,7 @@ datasource db {
 }
 
 model Customer {
-  id        String   @id @default(cuid(1))
+  id        String   @id @default(cuid())
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
